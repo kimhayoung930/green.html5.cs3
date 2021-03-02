@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div P:first-child{  
+            background-color:red;}  */
+        /* 적용안됨 */
+
+        div P:first-of-type{
+            background-color:blue;} 
+        /* p중에 첫번째 요소이기에 적용 */
+    </style>
+</head>
+<body>
+    <h1>TEST1</h1>
+    <P>Lorm1</P>
+    <h2>test2</h2>
+    <p>lorm2</p>
+    <h3>Test3</h3>
+</body>
+</html>
