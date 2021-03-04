@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,12 +10,20 @@
         *{text-align: center;
           }
      h1{font-family: Georgia, 'Times New Roman', Times, serif;
-         background-color:lightgoldenrodyellow;}
+         background-color:lightgoldenrodyellow;
+         text-align: center;}
      h2{font-family: Georgia, 'Times New Roman', Times, serif;
-        background-color:lightgoldenrodyellow;}
+        background-color:lightgoldenrodyellow;
+        text-align: center;
+        }
+        p{font-size: larger;
+            font-family: Georgia, 'Times New Roman', Times, serif;}
     </style>
+
 </head>
 <body>
+    <h1><i><span style=background-color:lightgoldenrodyellow;>Summer Shoes!</span></i></h1>
+    <h2><i><span style=background-color:lightgoldenrodyellow;>The best shoes in the summer.</span></i></h2>
 
 <hr />
     <table border="0" width="1200" height="800">
@@ -26,8 +35,19 @@
 
 <tr>
     <td rowspan="2"><img src="통굽.jpg" Width="400" height=400></td>
-   <td rowspan="2"><h1><i>Summer Shoes!</i></h1> <br />
-        <h2><i>The best shoes in the summer.</i></h2></td>
+   <td rowspan="2"> 
+   <fieldset style="width: 400px">
+    <legend><h2>Login</h2></legend>
+    <form method="POST" action="login_ck.php"></form>
+    <p>id:<input name="id" type="text"> </p>
+    <p>pw:<input name="pw" type="password"> </p>
+    <input type="submit" value="loig">
+    <input type="reset" value="reset">
+    <a href="join.html">join</a>
+
+   </fieldset>
+
+</td>
     <td rowspan="2"><img src="샌들11.jpg" Width="400" height=400></td>
 </tr>
 <tr><td></td></tr>
