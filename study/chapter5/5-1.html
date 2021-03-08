@@ -139,12 +139,50 @@
         }
     </style>
     <!-- 목록-->
-    <style></style>
+    <style>
+        .item {
+            overflow: hidden;
+            padding: 10px;
+            border: 1px solid black;
+            border-top: none;
+        }
+        .thumbnail{
+            float: left;
+        }
+        .description{
+            float: left;
+            margin-left: 10px;
+        }
+        .description > strong {
+            display: block;
+            width: 120px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
     <!-- 푸터-->
-    <style></style>
+    <style>
+        #main_foooter{
+            width: 960px; margin: 0 auto;
+            margin-bottom: 10px;
+
+            box-sizing: border-box;
+
+    padding: 10px;
+    border: 1px solid black;
+
+    text-align: center;
+        }
+    </style>
    
 </head>
 <body>
+    <header id="main_header"></header>
+    <div id="content"></div>
+    <footer id="main_footer"> 
+
+    </footer>
     <header id="main_header"> 
 
     <div id="title">
@@ -217,10 +255,39 @@
                     <li><a href="#">CSS3 border</a></li>
                     <li><a href="#">Css3 Box</a></li>
             
-                </ul>
+                    <div class="tab_item">
+                        <ul>
+                            <li><a href="#">HTML5 Canvas</a></li>
+                            <li><a href="#">HTML5 Audio</a></li>
+                            <li><a href="#">HTML5 Video</a></li>
+                            <li><a href="#">HTML5 Semantic Web</a></li>
+                           
+                            <li class="item"><a href="#">
+                                <div class="thumbnail">
+                                    <img src="http://placehold.it/45x45" />
+                                </div>
+                                <div class="description">   
+                                    <strong> CSS3 Border</strong><P>2019-03-15</P>
+                                </div>
+                                </a></li>
+                                <li class="item"><a href="#"></a></li>
+                                <div class="description">
+                                    <img src="http://placehold.it/45x45" />
+                                </div>
+                                    <strong>HTML5 Box</strong>
+                                    <p></p>
+                                </a></li>
+                                </div>
+                         
+                
+                    </ul>
             </div>
         </aside>
     </div>
-    <footer></footer>
+   
+    <footer id="mian_footer">
+        <h3>HTML5+CSS3 Basic</h3>
+        <address>Website Layout Basic</address>
+    </footer>
 </body>
 </html>
