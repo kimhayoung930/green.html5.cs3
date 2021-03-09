@@ -15,20 +15,115 @@
 <style>
     header{height: 80px;
            margin: auto;}
-    h1{text-align: center;}
+    h1{text-align: center;
+        margin: 0 auto;}
 </style>
-<!-- 이미지 -->
+<!-- 상단메뉴 -->
+<style>
+  #topMenu {            
+                        height: 50px; 
+                        width: 1500px; 
+                        margin: 0 auto;
+                        padding: 0;}
+                #topMenu ul li {                      
+                        list-style: none;          
+                        color: black;            
+                        background-color: #fcf2f3;  
+                        float: right;                
+                        line-height: 50px;         
+                        vertical-align: middle;     
+                        text-align: center;    
+                             
+                        }
+                #topMenu .menuLink {                              
+                        text-decoration:none;                      
+                        color:black;                           
+                        display: block;                            
+                        width: 150px;                             
+                        font-size: 15px;                          
+                        font-weight: bold;                        
+                        font-family: bold;
+                }
+                #topMenu .menuLink:hover {          
+                        color: red;                
+                        background-color: white;   
+                }
+</style>
+<!-- 왼쪽사이드 메뉴 -->
+<style>
+aside#left{
+    float: left;
+    width: 250px;
+    height: 1000px;
+    margin: 0 auto;
+    padding: 0;
+}
+ 
+aside#left ul{ list-style: none}
+ 
+aside#left ul li{
+    background-color: #fcf2f3;
+    padding: 5px 10px;
+
+    
+}
+ 
+aside#left ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+  
+}
+ 
+aside#left ul li:hover{
+        color: red;
+    background-color: white;
+}
+aside#main{
+    float: left;
+    color: red;
+}
+ </style>
+
+
+  <!-- 이미지 -->  
+
 <style>
     .img {margin: 0 auto;
          float: right; 
          display: block;}
-</style>
 
+</style>
 
 </head>
 <body>
-    <header><h1>미소</h1></header>
-   <div class="img"> <marquee 1OOP="1" width="800" height="1000" direction="left" scrollamount="10" behavior="alternate">
+    <header><h1>Miso</h1></header>
+    <nav id="topMenu" >
+        <ul>
+                <li><a class="menuLink" href="#">Insta</a></li>
+                <li><a class="menuLink" href="#">Blog</a></li>
+                <li><a class="menuLink" href="#">review</a></li>
+                <li><a class="menuLink" href="#">Q & A</a></li>
+                <li><a class="menuLink" href="#">cart</a></li>
+                <li><a class="menuLink" href="#">Sign Up</a></li>
+                <li><a class="menuLink" href="#">login</a></li>
+        </ul>
+</nav>
+<aside id="left">
+         <ul>
+            <li><a class="leftmenu" href="#" >Self wedding dress</a></li>
+            <li><a class="leftmenu" href="#" >wedding dress</a></li>
+            <li><a class="leftmenu" href="#" >Long dress</a></li>
+            <li><a class="leftmenu" href="#" >Mini dress</a></li>
+            <li><a class="leftmenu"  href="#" >Modern dress</a></li>
+            <li><a class="leftmenu" href="#" >Outwear</a></li>
+            <li><a class="leftmenu" href="#" >Underwear</a></li>
+            <li><a class="leftmenu" href="#" > Shoes</a></li>
+            <li><a class="leftmenu" href="#" >Accessories </a></li>
+        </ul>
+    </aside>
+
+   <div class="img"> <marquee 1OOP="1" width="750" height="800" direction="left" scrollamount="10" behavior="alternate">
         <img src="표지.jpg" > 
         <img src="표지1.jpg">
         <img src="표지2.jpg" >
@@ -38,5 +133,8 @@
         <img src="표지6.jpg" >
     </marquee>
         </div>
+
+
+       
 </body>
 </html>
