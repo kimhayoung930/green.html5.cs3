@@ -125,14 +125,36 @@ body { position: relative;}
     margin: auto; padding: 0%;
     -moz-column-count: 5;
     column-count: 5;
-    float: left; 
-   
+    float: left;    
 }
 
 .header{
     color:rgb(170, 222, 238);
-    font-family: bold;
 }
 
+/* 이미지 */
 
+#parent {
+    overflow: hidden;
+}
+.one {float: left;
+      display: block;}
 
+#aside {
+    width: 170px;
+    margin: 7px;
+}
+
+/* 푸터 */
+ .wrapper { 
+            position: relative;
+            min-height: 100%;
+            margin: 0 auto: -155px;
+        }
+footer {
+    position: absolute;
+    background-color: gray;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}

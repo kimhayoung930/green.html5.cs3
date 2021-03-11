@@ -33,7 +33,8 @@ body{
 
 /* 상단메뉴 */
 
-  #topMenu {              
+  #topMenu {            
+                        float: none;  
                         height: 50px; 
                         width: 1500px; 
                         margin: 0 auto;
@@ -70,6 +71,7 @@ body{
                 /* 왼쪽사이드 메뉴*/
                
                 aside#left{ 
+                    
                     float: left;
                     width: 400px;
                     height: 1000px;
@@ -114,11 +116,11 @@ body{
 /* 이미지 */
 .img {
     position: absolute;
+    float: noneSS;
     margin:0 auto;
-    text-align: center; 
+    text-align: center;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: -4;
     }
 
-   

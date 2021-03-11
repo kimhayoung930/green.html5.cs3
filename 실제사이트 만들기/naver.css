@@ -1,0 +1,25 @@
+/* 초기화 */
+*{
+    margin: 0; padding: 0;
+    font : normal 12px 'Dotum'
+    }
+    a { text-decoration: none; }
+    img { border: 0; }
+    ul { list-style: none; }
+
+/* 헤더 */
+#header {
+ background: lightgray;
+ height: 215px;
+}
+
+/* 메인 */
+#main {
+    background: #f2f4f7;
+}
+
+/* 푸터 */
+#footer {
+    background: darkgray;
+    height: 310px;
+}
