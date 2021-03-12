@@ -9,39 +9,42 @@ a { text-decoration: none; }
 img { border: 0; }
 ul { list-style: none; }
 
-#wrap { 
+body { 
     width: 960px;
     margin: 0 auto;
 }
 /* 헤더 */
-header {height: 300px;
-        background-color: pink;
-         border:0px 0px 2px 0px  solid royalblue;}
+header {height: 225px;
+        background-color:#fbe5e4;
+         border-bottom: 10px  solid #d8454e;}
          
          #nav_menu ul {
             list-style-type:none;
-            background-color:#000000;
+            background-color:#d8454e;
             padding:1px 10px 10x 1px;
             float:right;
             height: 50px;
-            width: 300px;
-            
+            width: 800px;
+           
             }
            
          #nav_menu ul li {
             display:inline;
-            border-left: 1px solid #c0c0c0;
             padding: 0px 10px 0px 10px;
             margin: 5px 0px 5px 0px;
             color:#ffffff;
             font-size:9pt;
             }
-            #nav_menu ul li:first-child {
-            border-left: none;
-            }        
+         
+            #nav_menu ul li:hover {
+                color: white;
+                background-color:#fbe5e4 ;
+            }
 /* 메인 */
 main { height: 600px;
-    background-color: pink;}
+    background-color:#fbe5e4;
+    border-bottom: 10px  solid #d8454e;}
 
 /* 푸더 */
-footer {height: 300px;}
+footer {height: 300px;
+    background-color:#fbe5e4}

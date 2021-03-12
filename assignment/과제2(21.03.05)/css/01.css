@@ -8,14 +8,11 @@ font : normal 12px 'Dotum'
 a { text-decoration: none; }
 img { border: 0; }
 ul { list-style: none; }
-body{
+body{ width: 960px;
+    margin: 0 auto;
     background-color: #fcf2f3;
-    height: 100%;
-}
-.wrap {
-    min-height: 100%;
-    position: relative;
-    padding-bottom: 1000px;
+    
+
 }
 /* header */
 #header h1 {
@@ -47,7 +44,7 @@ main { width: auto;
   #topMenu {            position: fixed;
                         overflow: auto;
                         height: 50px; 
-                        width: 1500px; 
+                        width: 960px; 
                         margin: 0 auto;
                         padding: 0;
                     }
@@ -70,7 +67,7 @@ main { width: auto;
                         text-decoration:none;                      
                         color:black;                           
                         display: block;                            
-                        width: 150px;                             
+                        width: 960px;                             
                         font-size: 20px;                          
                         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 }
@@ -133,7 +130,6 @@ main { width: auto;
 .img {
     position: fixed;
     position: absolute;
-    float: noneSS;
     margin:0 auto;
     text-align: center;
     width: 100%;
