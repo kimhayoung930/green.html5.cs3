@@ -1,0 +1,83 @@
+*{
+    margin: 0; padding: 0;
+    font : normal 12px 'Dotum'
+    }
+    a { text-decoration: none; }
+    img { border: 0; }
+    ul { list-style: none; }
+
+body{width:960px;
+    margin: 0 auto;
+    
+    }
+
+    /* 헤더 */
+header{
+    position: relative;
+    width: 960px;
+    height: 203px;
+    margin: 0 auto;
+}
+header .select .lang-select {
+    position: absolute;
+    float: right;
+    right: 0;
+    overflow: auto;
+    width:80px;
+    height: 40px;
+    padding: .8em .5em;
+    border:1px solid black;
+    padding: .8em .5em;
+    border-radius: 1px;
+
+}
+
+header .header img {
+    position: absolute;
+    text-align: center;
+    
+}
+    /* 메인 */
+main { width: 960px;
+       height: 400px;}
+main .id {
+    text-align: center;
+   
+}
+
+main .id input{
+    width: 350px;
+    height: 30px;
+}
+
+main .passward {
+    text-align: center;
+}
+
+main .passward input {
+    width: 350px;
+    height: 30px;
+}
+
+.checkbox input {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+
+span .code  {
+    position: relative;
+    text-align: center;
+}
+span .code button {
+    position: absolute;
+    text-align: center;
+    background-color: white;
+    border: 1px solid green;
+}
+
+span {
+    text-align: center;
+}
+    /* 푸터 */
