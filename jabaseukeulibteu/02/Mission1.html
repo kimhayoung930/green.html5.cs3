@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var price1 = prompt ("교통비는?", "0") ;
+        var price2 = prompt ("식비는?", "0") ;
+        var price3 = prompt ("음료비는?", "0") ;
+
+        var result = price1 + price2 + price3 ;
+        var excess = result - 10000 ; 
+        result = result > 10000 ? excess +"원 초과 " : "돈관리 잘 했어요!" ;
+        document.write(result);
+    </script>
+</body>
+</html

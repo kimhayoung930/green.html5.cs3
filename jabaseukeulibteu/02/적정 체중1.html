@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name = prompt("당신의 이름은?", "")
+        var Height = prompt("당신의 신장은?", "0")
+        var weight = prompt("당신의 몸무게는?", "0")
+
+        var normal_w=(Height-100) * 0.9 ;
+        var resuit = weight >= normal_w - 5 && weight <=normal_w +5;
+        result = result? "적정체중입니다." : "적정체중이 아닙니다.";
+        document.write(name+"님은"+result)
+    </script>    
+</body>
+</html>
