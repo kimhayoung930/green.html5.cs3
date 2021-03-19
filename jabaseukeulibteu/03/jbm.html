@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 문제1 -->
+    <script>
+        for(var i=10; i>=0; i--){
+             document.write(i+"<br>");
+        }
+    </script>
+    <!-- var i=10( 초기화 값) ,i>=0(10,9,8,7,6,5,4,3,2,1,0 까지 나타남 화면에) -->
+    <hr>
+
+
+    <!-- 문제2 -->
+<script>
+    for(var i=0; i<=10; i++){
+        if(i%2 ==0) {
+        document.write(i,"<br>");
+    }
+    }
+</script>
+<hr>
+
+<!-- 문제3 -->
+<script>
+    var num=0;      //num 에는 무조건 초기값은 줘어야함 중요          
+    for(var i=1 ; i<=9; i++){
+        num+=i;        
+    }
+    document.write(num);
+</script>
+<hr>
+
+ <!-- 문제4 -->
+<script>
+    var num=0;
+    for(var i=1; i<20; i++){
+        if((i%2 ==0 )||(i%3 ==0)){
+           num+=i;}
+        
+    }document.write(num);   // || "또는" , 가로로 묶어 주기
+</script>
+<hr>
+<!-- 문제5 -->
+<script>
+var subgect =prompt("과목입력" , "");
+var code;
+
+switch(subgect) {
+    case "수학" : code = "01";
+    break;  //switch에서 break는 꼭 써야함!
+}
+</script>
+<hr>
+<!-- 문제6 -->
+<script>
+
+</script>
+<hr>
+<!-- 문제7 -->
+<script>
+
+</script>
+<hr>
+</body>
+</html>

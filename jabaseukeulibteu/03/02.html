@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0 auto;}
+        .red{color: red;}
+        .blue{color: blue;}
+        .green{color: green;}
+        .aqua{color: aqua;}
+    </style>
+</head>
+<body>
+    <script>
+        var site = prompt("네이버, 다음, 네이트, 구글 중 즐겨 사용하는 포털 검색 사이트는?" , "");
+        var url;
+
+        switch(site) {
+            case"구글" : url="www.google.com";
+            break;
+            case"다음" : url="www.daum.com";
+            break;
+            case"네이버" : url="www.nate.com";
+            break;
+            case"네이트" : url="www.naver.com";
+            break;
+            default: alert("보기 중에 없는 사이트입니다.")
+        }
+
+        if(url)location.href="http://"+ url;
+    </script>
+    <hr>
+    <script>
+        var i =1;
+        while(i <= 10){
+            document.write("안녕하세요" +i, "<br/>");
+        i++;
+        }
+        document.write("====the end====")
+    </script>
+    <hr>
+    <script>
+        var i =1;
+        while(i <=30){
+            if (i % 2 ==0 && i% 6==0){
+                document.write(i,"<br>");
+            }
+            i++
+        }
+    </script>
+    <hr>
+    <script>
+        var i = 20;
+        while(i>=10){
+            if(i%2==0){
+                document.write("<p class='blue'>"+i+"</p>");
+            }else{
+                document.write("<p class='red'>"+i+"</p>");
+            }
+            i--;
+        }
+    </script>
+    <hr>
+    <script>
+        var i=10;
+        do{
+            document.write("hello!");
+        } while(i<3)
+    </script>
+    <hr>
+    <script>
+        for(var i=1;i<=10; i++) {
+            document.write("반복"+i,"<br>");
+        }
+    </script>
+    <hr>
+    <script>
+        for (var i=1; i<=100; i++){
+            if(i % 5==0 && i%7!=0){
+                document.write("<p class='red'>"+i+"</p>");
+            } else if(i % 7==0 && i & 5!=0){
+                document.write("<p class='green'>"+i+"</p>");
+            } else if(i % 7==0 && i & 5 ==0) {
+                document.write("<p class='aqua'>"+i+"</p>");
+
+            }
+        }
+    </script>
+
+    <hr>
+    <script>
+        for(var i=1; i <=10; i++){
+            if(i==6) break;
+            document.write(i,"<br>");
+        }
+        document.write("====The End====")
+    </script>
+    <hr>
+    <script>
+        for(var i=1; i<= 10; i++){
+            if(i % 2==0) continue;
+            document.write(i, "<br>");
+        }
+        document.write("====The End====")
+    </script>
+        <hr>
+     <script>
+         for(var i=1; i <=3; i++){
+             for(var k = 1; k <= 2; k++){
+                 document.write(i + "행" + K + "열");
+             }
+             document.write("<br>");
+         }
+     </script>   
+</body>
+</html>
