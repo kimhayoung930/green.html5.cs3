@@ -1,0 +1,42 @@
+
+*{
+    margin: 0; padding: 0;
+    font: normal 15px 'Arial'
+}
+a{text-decoration: none !important;}
+img{border: 0;}
+ul{list-style: none;}
+
+
+
+/* 스타일 사용 */
+.container {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.row {
+    overflow: hidden;
+    width: 100%; }
+
+.row > div[class*=span] {
+    float: left;
+    margin-left: 2% }
+
+.row > div[class*=span]:first-child {
+        margin-left: 0;
+       }
+
+.span-1{width: 6.5%;}  
+.span_2{width: 15%;}  
+.span_3{width: 23.5%;}  
+.span_4{width: 32%;}
+.span_5{width: 40.5%;}
+.span_6{width: 49%;}
+.span_7{width: 57.5%;}
+.span_8{width: 66%;}
+.span_9{width: 74.5%;}
+.span_10{width: 83%;}
+.span_11{width: 91.5%;}
+.span_12{width: 100%;}
+

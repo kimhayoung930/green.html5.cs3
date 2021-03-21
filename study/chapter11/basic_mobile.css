@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+*{
+    margin: 0; padding: 0;
+    font: normal 15px 'Arial'
+}
+a{text-decoration: none !important;}
+img{border: 0;}
+ul{list-style: none;}
+
+
+#container {
+    width: 960px;
+    margin: 0  auto;
+
+}
+
+/* 헤더 */
+header{
+    background: gray;
+    
+}
+
+nav {
+    height: 100px;
+}
+
+/* 콘텐츠 */
+section { overflow: hidden;}
+
+section > article {
+    float: none;
+    width: 500%;
+}
+
+section > article:nth-child(1) {
+    background:paleturquoise;
+    height: 500px;
+}
+
+section > article:nth-child(2) {   
+    background:palegoldenrod;
+    height: 500px;
+}
+
+/* 푸터 */
+footer {
+    height: 100px;
+    background:plum;
+}

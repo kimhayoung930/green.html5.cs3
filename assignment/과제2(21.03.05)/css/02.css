@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+/* 초기화 */
+* {
+margin: 0; padding: 0;
+font : normal 12px 'Dotum'
+}
+a { text-decoration: none; }
+img { border: 0; }
+ul { list-style: none; }
+
+body { 
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: bold;
+}
+/* 헤더 */
+header {height: 225px;
+        background-color:#fbe5e4;
+         border-bottom: 10px  solid #d8454e;}
+       
+         #nav_menu ul {
+            list-style-type:none;
+            background-color:#d8454e;
+            padding:1px 10px 10x 1px;
+            float: right;
+            text-align: center;
+            height: 50px;
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+           
+            }
+           
+         #nav_menu ul li {
+            display:inline;
+           
+            color:#ffffff;
+            font-size:3rem;
+        
+            }
+         
+            #nav_menu ul li:hover {
+                color: white;
+                background-color:#fbe5e4 ;
+            }
+/* 메인 */
+main { height: 600px;
+    background-color:#fbe5e4;
+    border-bottom: 10px  solid #d8454e;}
+
+/* aside */
+
+  .thumb img{
+      border: 1px solid #d8454e;
+      border-radius: 10px;
+  }
+  .meun_list{
+      height: 200px;
+      width: 200px;
+      font-weight: 500;
+      font-size: 2rem;
+      color: black;
+      text-align: center;
+  }
+
+aside {
+    background-color: #fbe5e4;
+    height: 300px;
+    columns: 3;
+}
+li {
+    break-before: column;
+}
+button {
+    margin: 0;
+    padding: 0;
+    background: #d8454e;
+    border: 0;
+    outline: 0;
+    color: #fbe5e4;
+    border-radius: 3px;
+    font-size: 4px; padding:9px 9px ;
+    font-family: bold;
+   
+}
+
+
+footer { background-color: #d8454e;
+      height: 120px;}
+.pagination{
+    margin-top: 20px; white-space: nowrap; text-align: center;
+    height: 37px; line-height: 37px;
+}
+.pagination a{display: inline-block; border: 1px solid #fbe5e4;
+                height: 35px; width: 35px; vertical-align: middle; 
+                text-align: none; font-size: 15px; color: #fbe5e4;
+                background: #d8454e;
+}
+
+.pagination.on{color: #fbe5e4; font-weight: bold; background: #fbe5e4;
+
+}
+.pagination .prev.pagination .next {
+    height: 35px; width: 35px; border: 1px solid #fbe5e4;
+    overflow: hidden; position: relative; font-size: 0;
+
+}
+.pagination .prev .end .pagination .next .end {
+    height: 35px; width: 35px; font-size: 0;
+}
+.pagination .prev{background:#ebebeb url("") no-repeat center center; margin-right:11px;}
+.pagination .prev.end{background:#ebebeb url("") no-repeat center center; margin-right:4px; border-right:0;}
+.pagination .next{background:#ebebeb url("") no-repeat center center; margin-left:12px;}
+.pagination .next.end{background:#ebebeb url("") no-repeat center center; margin-left:4px; border-left:0;}

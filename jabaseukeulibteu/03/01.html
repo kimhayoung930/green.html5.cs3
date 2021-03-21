@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- if -->
+    <script>
+        var num=10;
+        if(num <500){
+            document.write("hello");
+        }
+    </script>
+
+    <hr>
+
+    <script>
+        var walkAmout = prompt("당신의 하루 걷는 양은 몇 보인가요?", "0");
+
+        if(walkAmout >= 10000) {
+            document.write("매우 좋은 습관을 지니고 계시는군요!!", "<br>")
+        }
+        document.write("======the End========");
+    </script>
+
+    <hr>
+
+    <script>
+        var min = prompt("당신의 하루 통화량은 몇 분인가요?", "0");
+        if(min >= 60) {
+            document.write("많이 사용하는 편이네요");
+
+        }
+        document.write("====The End======");
+    </script>
+
+    <hr>
+
+    <script>
+        var userName = prompt("방문자의 이름은?" , "");
+        if(userName) {
+            document.write(userName+"님 반갑습니다! 방문을 환영합니다.");
+        }
+    </script>
+
+    <hr>
+    <script>
+        var num = prompt("당신이 좋아하는 숫자는?", "0")
+        if(num % 2 ==0) {
+            document.write("당신이 좋아하는 숫자는 짝수입니다.");
+        } else {document.write("당신이 좋아하는 숫자는 홀수입니다."); }
+    </script>
+
+    <hr>
+    <script>
+        var result = confirm("정말로 회원탈퇴를 하시겠습니까?");
+
+        if(result) {
+            document.write("탈퇴 처리되었습니다!");
+        } else {
+            document.write("탈퇴 최소되었습니다.");
+        }
+    </script>
+
+    <hr>
+
+    <script>
+        var mon = prompt("현재는 몇 월입니까?" , "0");
+
+        if(mon >= 9 && mon <=11) {
+            document.write("독서의 계절 가을이네요!!");
+        } else if (mon >=6 && mon <=8) {
+            document.write("여행가지 좋은 여름이네요!!");
+        } else if (mon >= 3 && mon <=5) {
+            document.write("햇살이 가득한 봄이네요!!");
+        } else {
+            document.write("스키의 계절 겨울이네요!!");
+        }
+    </script>
+    <hr>
+
+    <!-- 중천 if 문 -->
+
+    <script>
+        var id ="easy1004";
+        
+        var pw = "112233";
+
+        var user_id = prompt("아이디는?", "");
+        var user_pw = prompt("비밀번호는?" , "");
+
+        if(id==user_id){
+            if(pw==user_pw) {
+                document.write(user_id+"님 반갑습니다!"); }
+            else { alert("비밀번호가 일치하지 않습니다.")}
+                location.reload();
+
+            }
+        } else {
+            alert("아이디가 일치하지 않습니다.") ;
+            location.reload();
+        }
+
+    </script>
+</body>
+</html>

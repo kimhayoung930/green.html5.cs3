@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+/* 초기화 */
+* {
+margin: 0; padding: 0;
+font : normal 12px 'Dotum'
+}
+a { text-decoration: none; }
+img { border: 0; }
+ul { list-style: none; }
+
+
+/* 헤더 */
+header { 
+    height: 300px;
+    position: relative;
+}
+
+.wrap { 
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+
+.col-lg-6{
+    padding:10px;
+    position: absolute;
+    top: 0;
+    text-align:left; 
+    
+}
+.form-control {
+    padding-left: 50px;
+    border-radius: 80px 80px 80px 80px;
+    height: 30px;
+    width: 400px;
+    
+    
+}
+.btn-default {
+    border: none;
+ 
+
+}
+
+#topMenu { 
+    height: 50px;
+    width: 960px; 
+     } 
+#topMenu ul li 
+    {  list-style: none;
+          color: white; 
+          background-color: white; 
+          float: left; 
+          line-height: 30px;  
+          vertical-align: middle; 
+          
+        padding: 100px 20px;}
+ #topMenu .menuLink { 
+            text-decoration:none; 
+            color: white; 
+             display: block; 
+              width: 300px;  
+              font-size: 12px;
+               font-weight: bold; 
+               font-family: "Trebuchet MS", Dotum, Arial; 
+               } 
+#topMenu .menuLink:hover {  
+                color: red;  
+                background-color:white;
+                }
+
+
+#content > img  { border-radius: 60px;
+
+}
+
+.container{ 
+    overflow: auto;
+}
+.content {
+    /* position: fixed; */
+}
+.con{width: auto;}
+/* 푸더 */
+footer{height: 300px;}

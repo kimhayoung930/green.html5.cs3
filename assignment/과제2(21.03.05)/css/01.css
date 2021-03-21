@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/* 초기화 */
+*{
+margin: 0; padding: 0;
+font : normal 12px 'Dotum'
+}
+a { text-decoration: none; }
+img { border: 0; }
+ul { list-style: none; }
+
+body{ width: 960px;
+    margin: 0 auto;
+    background-color: #fcf2f3;
+    }
+/* 헤더 */
+header {
+    width: 960px;
+    height: 100px;
+    background-color: #2d3a4b;
+    position: relative;
+   
+}
+
+#top_menu {
+    position: absolute;
+    top:20px;
+    right: 10px;
+    color: white;
+}
+#top_menu a{
+    color: white;
+}
+nav{
+    position: absolute;
+    bottom: 10px;
+    left: 220px;
+    font-size: 16px;
+}
+nav li {
+    display: inline;
+    margin-left: 30px;
+}
+nav li a{color: white;}
+
+/* 어사이트 */
+aside{ width: 960px;
+        height:800px; }
+        
+
+
+/* 푸더 */
+        footer {
+            position: fixed;
+            overflow: auto;
+            bottom: 0;
+            height: 200px;
+            width: 960px;
+            background-color: #2d3a4b;
+            -moz-column-count :4;
+            column-count: 4;
+            column-rule: 2px dotted white
+        }
+       .foo_div {
+           text-align: center;
+          
+       }
+       
+       
+       .foo_div p {
+           margin-top: 5px;
+           /* color: white; */
+       }
+       
+       h1 {break-before: column;
+           font-family: bold;
+           font-size: x-large ; 
+           color: white;}

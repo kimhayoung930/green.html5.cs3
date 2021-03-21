@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      var tv = new Object();
+      tv.color ="white";
+      tv.price=30000;
+      tv.info = function() {
+          document.write("tv색상:" + this.color,"<br>");
+          document.write("tv가격:" + this.price,"<br>");
+      }
+      var car ={
+          color:"black",
+          price:5000000,
+          info:function()
+          {document.write("car색상:" + this.color,"<br>" );
+            document.write("car가격:" + this.price,"<br>");
+        }
+      };
+
+      document.write("<h1>tv 객체 메서드 호출</h1>");
+      tv.info();
+      document.write("<h1>car 객체 메서드 호출</h1>");
+      car.info();
+    </script>
+    <hr>
+
+    <script>
+        var today = new Date();
+        var nowMonth = today.getMonth(),
+        nawDate = today.getDate(),
+        nowDay = today.getDay();
+
+        document.write("<h1>오늘 날짜 정보</h1>")
+        document.write("현재 월:"+ nowMonth, "<br>");
+        document.write("현재 일:"+nowDay,"<br>");
+        document.write("현재 요일:"+nowDay,"<br>");
+
+        var worldcup = nowDate(2002,4,31);
+        var theMonth = worldcup.getDate(),
+        theDate = worldcup.getDate(),
+        theDay = worldcup.getDay();
+
+        document.write("<h1>월드컵 날짜 정보</h1>");
+        document.write("2020월드컵 몇 월:" + theMonth,"<br>"); 
+    </script>
+</body>
+</html>

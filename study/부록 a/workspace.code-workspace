@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "..\\.."
+		},
+		{
+			"name": "green.html5.css3.student",
+			"path": "..\\..\\..\\green.html5.css3.student"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "green.html5.cs3-1"
+	}
+}
