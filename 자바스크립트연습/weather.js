@@ -5,6 +5,7 @@ var bust = [40, 60, 70, 90];
 var day1 = [], day2 = [] , day3 = [] ,day4 = [];
 
 var forecast = new Object();
+// temp
 forecast.tempShow = function(){
     for(var i = 0; i<temp.length; i++){
 
@@ -18,18 +19,32 @@ forecast.tempAvgShow = function(){
     var avg = num / temp.length;
     return avg;
 };
-
+// rain
 forecast.rainShow = function(){
     for(var i = 0; i<rain.length; i++){
     
 };
-forecast.rainAvShow = function(){};
-
+forecast.rainAvShow = function(){
+    var num =0;
+    for(var i = 0; i<rain.length; i++){
+        num+= rain[i];
+    }
+    var avg = num / rain.length;
+    return avg;
+};
+// bust
 forecast.bustShow = function(){
     for(var i = 0; i<bust.length; i++){
 
     }
 };
-forecast.bustAvgShow = function(){};
+forecast.bustAvgShow = function(){
+    var num =0;
+    for(var i = 0; i<bust.length; i++){
+        num+= bust[i];
+    }
+    var avg = num / bust.length;
+    return avg;
+};
 
 
