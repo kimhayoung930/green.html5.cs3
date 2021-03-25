@@ -7,15 +7,131 @@
     <title>선택자</title>
     <script src="jquery-3.6.0.min.js"></script>
     <script>
+        //기본형 (아이디 선택자)
         $(function() {
             $("#title").css("color","red");
+        });
+        //직접 선택자 : 모든 태그 다 선택
+        $(function () {
+            $("*").css("border","1px solid blue");   
+        });
+        //클래스 선택자
+        $(function () {
+            $(".tit").css("backrground-color","#ff0")
+            .css("border","2px dashed #f00");
+        });
+        //요소명 선택자
+        $(function() {
+            $("h4").css("background-color",'#0ff')
+            .css("border", "2px dashed blue");
+        });
+        //그룹선택자 : 한번에 여러요소를 선택할때
+        $(function(){
+            $("#tit3","h5").css("background-color","#f00")
+            .ccs("border","3px dashed #ff5409")
+        });
+        //종속선태자 : id또는 class 값이 일치하는 요소를 선택할떄 사용 
+        $(function() {
+            $("h2.tit").css("background-color","#0ff454")
+            .css("border","4px dashed #f00")
+        });
+        //인접관계 선택자
+        $(function(){
+            $("h1").next().css("color" ,"green")});
+        $(function(){
+            $("h2").parent().css("border","1px solid #f00")
+        });
+        //부모요소 선택자
+        $(function(){
+            $("#list_1").parent()
+                .css("color", "#0ff455")
+        });
+        //하위요소 선택자
+        $(function(){
+            $("#wrap4 h1").css({
+                "background-color":"yellow"
+               
+            });
+        });
+        //자식 요소 선택자
+        $(function(){
+            $("#wrap5 > h1").css({"border":"2px solid #ff0"});
+
+            $("#wrap5 > section").css({
+                "backround-color":"yellow"
+                
+            });
+        });
+        //형제관계요소
+        $(function(){
+            var style_1={
+                "background-color":"#0ff",
+                "border":"2px solid #f00"
+            }
+
+            $("wrap6").css(style_1)
         });
     </script>
 </head>
 <body>
     <h1 id="title">제목</h1>
 
+<h1>제이쿼리</h1>
+<h2 class="tit">선택자</h2>
+<h3>직접 선택자</h3>
+<h4>직접 선택자</h4>
+<h4 id="tit3">제이쿼리</h4>
+<h5>선택자</h5>
 
+<div id ="wrap">
+    <div id = "inner_wrap">
+        <h1>제목1</h1>
+        <h2>제목2</h2>
+        <p>내용1</p>
+        <p>내용2</p>
+    </div>
+</div>
+
+<div id ="wrap">
+    <h1>제목</h1>
+    <ul id="wrap1">
+        <li>리스트1</li>
+        <ul>
+            <li id="list_1">리스트 1-1</li>
+            <li>리스트 1-2</li>
+        </ul>
+        <li>
+            <li>리스트2</li>
+            <li>리스트3</li>
+        </li>
+    </ul>
+</div>
+
+<div id="wrap4">
+    <h1>인접 관계 선택자</h1>
+    <p>내용1</p>
+    <section>
+        <h1>하위 요소 선택자</h1>
+        <p>내용2</p>
+    </section>
+
+</div>
+
+<div id="wrap5">
+    <h1>인접 관계 선택자</h1>
+    <p>내용1</p>
+    <section>
+        <h1>자식 요소 선택자</h1>
+        <p>내용2</p>
+    </section>
+</div>
+
+<div id="wrap6">
+    <h1>인접 관계 선택자</h1>
+    <p>내용1</p>
+    <p class="txt">내용2</p>
+    <p>내용2</p>
+    <p>내용2</p>
 
 </body>
 </html>
