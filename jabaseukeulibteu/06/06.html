@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <script>
+        $(function(){
+            var idxNum=$("li").index($("#list3"));
+            console.log(idxNum);
+        });
+    </script>
+</head>
+<body>
+    <h1>배열관련 함수</h1>
+
+    <ul>
+        <li>내용</li>
+        <li>내용</li>
+        <li id="list3">내용</li>
+        <li>내용</li>
+    </ul>
+</body>
+</html>
