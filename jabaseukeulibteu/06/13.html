@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../06/J-qq/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            var srcVal=$("#sec_1 img").attr("src");
+            console.log(srcVal);
+
+            $("#sec_1 img")
+            .attr({
+                "width":200,
+                "src":srcVal.replace("다운로드.jfif","다운로드(1).jfif"),
+                "alt":"바위"
+            })
+            .removeAttr("border");
+        });
+    </script>
+</head>
+<body>
+    <h1>
+        <strong>객체 조작 및 생성</strong>
+    </h1>
+    <section id="sec_1">
+        <h2>이미지 속성</h2>
+        <p>
+            <img src="다운로드.jfif" alt="가위" >
+        </p>
+    </section>
+</body>
+</html>
