@@ -55,7 +55,11 @@
                 scrollTop: $(this.hash).offset().top
             },500)
         });
+        $(window).resize(function(){
+            $(".container").width($(window).width())
+        });
     });
+
 </script>
 </body>
 </html>
