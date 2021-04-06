@@ -12,6 +12,7 @@
            var count =1;
            $(".btnWrap button").on("click",function(){
                 if(!txt1.is(":animated")){
+                    if($(this).hasClass("backBtn"))
                     count--;
                     if(count<1){
                         count = 1;

@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+/* 초기화 */
+* {
+    margin: 0; padding: 0;
+    font: normal 13px 'Arial';
+}
+a { text-decoration: none !important; }
+img { border: 0; }
+ul { list-style: none; }
+
+/* 헤더 */
+
+#main_header {
+    background: gray;
+    color: white;
+    height: 250px;
+}
+
+#main_header a {
+    color: white;
+}
+
+#main_header > .gnb_container {
+    background: black;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+}
+
+#main_header .gnb {
+    margin: 0 auto;
+    padding-top: 10px;
+    display: flex;
+}
+
+#main_header .logo {
+    flex: 1;
+}
+
+#main_header ul {
+    overflow: hidden;
+    padding-top: 12px;
+    padding-left: 10px;
+    flex: 2;
+}
+
+#main_header ul > li {
+    float: left;
+    margin-right: 1rem;
+}
+
+#main_header .setting {
+    text-align:right;
+    padding-top: 12px;
+    flex: 1;
+}
+#nav li:hover .snbmun{
+    opacity: 1;
+    visibility: visible;
+}
+#main_header .trigger {
+    width: 23px;
+    text-align: right;
+    padding-top: 4px;
+    display: none;
+    flex: 1;
+}
+
+
+
+/* 콘텐츠 */
+
+#main_content {
+    height: 1000px;  /* 콘텐츠 스크롤 만들어 지도록*/ 
+}
+
+/* 미디어 쿼리 */
+
+@media screen and (max-width: 767px) {
+    #main_header .gnb {
+        width: 90vw;
+    }
+
+    #main_header ul { 
+        display: none;
+    }
+
+    #main_header .setting {
+        display: none;
+    }
+
+    #main_header .trigger {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #main_header .gnb {
+        width: 90vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #main_header .gnb {
+        width: 960px;
+    }
+}

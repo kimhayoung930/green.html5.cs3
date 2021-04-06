@@ -1,0 +1,98 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    font: normal 13px 'Arial';
+}
+a{ text-decoration: none !important;}
+img{border: 0;}
+ul{list-style: none;}
+
+/* 헤더 */
+#main_header{
+    background: grey;
+    color: white;
+    height: 250px;
+    
+    
+}
+#main_header a{
+    color: white;
+}
+#main_header > .gnb_content{
+    background: black;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    /* 포지션 피섹드을 줄 경우 위드는 꼭 100%를 해야한다. */
+}
+#main_header .gnb{
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+#main_header .logo{
+    float: left;
+    width: 190px;
+}
+
+#main_header ul{
+    float: left;
+    overflow: hidden;
+    padding-top: 12px;
+    padding-left: 10px;
+    width: calc(100% - 217px);
+
+    /* calc 사칙연산은 해주는 거 */
+}
+#main_header ul > li{
+    float: left;
+    margin: 1rem;
+}
+#main_header .setting{
+    float: right;
+    width: 17px;
+    text-align: right;
+    
+}
+
+#main_header .trigger{
+    float: right;
+    width: 23px;
+    text-align: right;
+    padding-top: 4px;
+    display: none;
+}
+
+/* 콘텐츠 */
+#main_content{
+    height: 1000px;
+}
+
+/* 미디어쿼리 */
+@media screen and (max-width : 767px){
+    #main_header .gnb{
+        width: 90vw;
+    }
+    #main_header ul {
+        display: none;
+    }
+    #main_header .setting{
+        display: none;
+    }
+    #main_header .trigger{
+        display: block;
+    }
+}
+@media screen and (min-width : 768px) and (max-width : 1023px){
+    #main_header .gnb{
+        width: 90vw;
+        /* vw로도 반응형웹을 만들떄 응용하게 사용함 */
+    }
+    
+}
+@media screen and (max-width : 1024px){
+    #main_header .gnb{
+        width: 960px;
+    }
+}
