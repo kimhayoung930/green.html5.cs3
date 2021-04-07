@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>load()메서드</title>
+    <script src="../09/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $("#newsWrap_1")
+            .load("01.html #news_1")
+            $("#newsWrap_2")
+            .load("01.html #news_2");
+        })
+    </script>
+</head>
+<body>
+    <h1>LOAD1</h1>
+    <div id="newsWrap_1"></div>
+    <h1>LOAD2</h1>
+    <div id="newsWrap_2"></div>
+</body>
+</html>
