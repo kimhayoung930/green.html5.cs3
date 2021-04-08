@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 *{
     margin: 0;
     padding: 0;
@@ -67,48 +69,50 @@ nav ul li{
 nav ul li a {
     line-height: 50px;
 }
- a #trigger{
-    display: block;
-    background: #fef100;
-    padding-left: 15px;
-    line-height: 40px;
-    position: relative;
+#topMenu li :hover{
+    border-bottom: 5px solid red;
 }
- a#trigger::after{
-    content: "";
-    background: url(../img/bar.png) no-repeat;
-    width: 50%;
-    height: 50%;
-    display: inline-block;
-    position: absolute;
-    left: 15px;
-    top: 0px;
-}
-a #earth{
-    display: block;
-    background: #fef100;
-    padding-right: 15px;
-    line-height: 40px;
-    position: relative;
+#earth{
+    position: fixed;
+    top : 0px;
+    right: 60px;
     
 }
-a #earth ::after{
-    content: "";
-    background: url(../img/캡처.png) no-repeat;
-    width :50%;
-    height: 50%;
-    display: inline-block;
-    position: absolute;
-    right: 15px;
-    top: 0px;
+#cart{
+    position: fixed;
+    right: 0px;
+    top : 0px;
 }
 
-@media screen and (max-width : 635px){
+.submenuLink :hover { 
+    border-bottom: none;
+}
+.submenu li :hover{
+    border-bottom : none;
+}
+
+
+.submenu{
+    position: absolute;
+    height: 0px;
+    overflow: hidden;
+}
+.submenu li{
+    display: block;
+}
+#topMenu li:hover .submenu{
+    height: 800px;
+}
+.submenuLink {
+    
+
+}
+@media screen and (max-width : 767px){
     nav ul{
         display: none;
     }
 }
-@media screen and (min-width : 800px){
+@media screen and (min-width : 768px) and (max-width : 1023px){
     nav {
         height: 40px;
     }
@@ -137,7 +141,7 @@ a #earth ::after{
         line-height:40px;
     }
 }
-@media screen and (min-width : 1900px){
+@media screen and (min-width : 1024px){
     nav {
         height: 40px;
     }
