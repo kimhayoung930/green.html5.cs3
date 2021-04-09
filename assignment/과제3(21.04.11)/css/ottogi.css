@@ -100,24 +100,18 @@ nav ul li a {
     
     padding-bottom: 4px;
     display: inline-block;
-    left: 100;
+   
 }
 #topMenu li:hover .submenu{
     height: 800px;
 }
 
-@media screen and (min-width : 767px){
-    nav {
-        height: 40px;
-    }
-    
-}
-@media screen and (min-width : 768px) and (max-width : 1023px){
-    nav {
-        height: 40px;
-    }
-    
 
+@media screen and (min-width : 768px){ 
+    nav {
+        height: 40px;
+    }
+    
     nav ul {
         display: block;
         width: 720px;
@@ -134,6 +128,7 @@ nav ul li a {
         font-size: 1em;
         line-height:40px;
     }
+    
 }
 @media screen and (min-width : 1024px){
     nav {
@@ -162,5 +157,8 @@ nav ul li a {
     nav ul li a {
         font-size: 1em;
         line-height:40px;
+    }
+    #trigger{
+        display: none;
     }
 }

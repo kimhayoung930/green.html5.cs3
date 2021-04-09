@@ -1,6 +1,6 @@
 $(function(){
     var trigger =$("#trigger");
-    var menu = $("nav #topMenu");
+    var menu = $("ul li");
 
     $(trigger).on("click", function(e){
         e.preventDefault();
