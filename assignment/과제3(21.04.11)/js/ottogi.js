@@ -17,3 +17,20 @@ $(function(){
     });
     //resize는 화면 크기에 따라 비율은 다르개해줌 
 });
+
+$(function(){
+    var menuLink1 = $(".menuLink1");
+    var sub =$(".submenuLink");
+
+    $(menuLink1).on("click",function(e){
+        e.preventDefault();
+        sub.slideToggle();
+    });
+    $(window).resize(function(){
+        var n =$(window).width();
+
+        if(n > 320 && sub.is(":hidden")){
+            sub.removeAttr("style");
+        }
+    });
+});

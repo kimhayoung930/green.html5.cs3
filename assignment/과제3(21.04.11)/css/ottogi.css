@@ -70,7 +70,7 @@ nav ul li a {
     line-height: 50px;
 }
 #topMenu li :hover{
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid #dc2c34;
 }
 #earth{
     position: fixed;
@@ -83,7 +83,17 @@ nav ul li a {
     right: 0px;
     top : 0px;
 }
-
+.submenu{
+    width: 100%;
+    height: 100%;
+    background:#dc2c34;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    position: relative;
+    
+    
+}
 .submenuLink :hover { 
     border-bottom: none;
 }
@@ -102,9 +112,17 @@ nav ul li a {
     display: inline-block;
    
 }
+.submenu div p {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #576979;
+}
+
 #topMenu li:hover .submenu{
     height: 800px;
 }
+
 
 
 @media screen and (min-width : 768px){ 
@@ -128,9 +146,11 @@ nav ul li a {
         font-size: 1em;
         line-height:40px;
     }
-    
+  
+   
+ 
 }
-@media screen and (min-width : 1024px){
+@media screen and  (min-width : 1024px){
     nav {
         height: 40px;
     }
@@ -161,4 +181,5 @@ nav ul li a {
     #trigger{
         display: none;
     }
+   
 }
