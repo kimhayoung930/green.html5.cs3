@@ -70,7 +70,7 @@ nav ul li a {
     line-height: 50px;
 }
 #topMenu li :hover{
-    border-bottom: 5px solid red;
+    border-bottom: 3px solid red;
 }
 #earth{
     position: fixed;
@@ -87,49 +87,43 @@ nav ul li a {
 .submenuLink :hover { 
     border-bottom: none;
 }
-.submenu li :hover{
+.submenu p :hover{
     border-bottom : none;
 }
-
 
 .submenu{
     position: absolute;
     height: 0px;
     overflow: hidden;
 }
-.submenu li{
-    display: block;
+.submenu .submenuLink{
+    
+    padding-bottom: 4px;
+    display: inline-block;
+    left: 100;
 }
 #topMenu li:hover .submenu{
     height: 800px;
 }
-.submenuLink {
-    
 
-}
-@media screen and (max-width : 767px){
-    nav ul{
-        display: none;
+@media screen and (min-width : 767px){
+    nav {
+        height: 40px;
     }
+    
 }
 @media screen and (min-width : 768px) and (max-width : 1023px){
     nav {
         height: 40px;
     }
+    
+
     nav ul {
         display: block;
         width: 720px;
         height: 40px;
         padding: 0;
         margin: 0 auto;
-    }
-
-    nav ul li {
-        display: inline-block;
-        width: 120px;
-        border-bottom: 0;
-        border-right: 1px solid #576979;        
-        margin-right:-6px;
     }
 
     nav ul li:last-child {
