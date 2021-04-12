@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg {
+            min-width: 1024px;
+            min-height: 100%;
+            width: 100%;
+            height: auto;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        @media screen and (max-width:1024px) {
+            .bg {
+                left: 50%;
+                margin-left: -512px;
+            }
+        }
+
+        #content {								
+			position:absolute;
+			top:50%;
+			left:50%;
+			transform: translate(-50%, -50%);
+		}
+        h1 {
+            color:white;
+            font-size:8em;				
+            font-style:italic;				
+            text-shadow:2px 2px 3px #222, 2px 2px 3px black;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/pink-hair.jpg" class="bg">
+    <div id="content">
+        <h1>Passion</h1>
+    </div>
+</body>
+</html>

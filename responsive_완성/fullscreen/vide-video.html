@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+
+    * {
+        margin:0;
+        width:100%;
+        height:100%;
+    }
+    h1 {
+        position:relative;
+        top:150px;
+        text-align:center;				
+        font-family: 'Courgette', cursive;
+        font-size:5em;
+        color:white;
+    }
+    </style>
+</head>
+<!-- <body data-vide-bg="mp4: videos/stream, webm: videos/stream, ogv: videos/stream, poster: videos/stream"
+     data-vide-options="posterType: jpg, loop: true, muted: true"> -->
+<body>
+	<h1>Fullscreen Video</h1>		
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.vide.min.js"></script>
+    <script>
+        $('body').vide({
+            mp4: "videos/stream", 
+            webm: "videos/stream", 
+            ogv: "videos/stream", 
+            poster: "videos/stream"
+        }, {
+            posterType: "jpg", 
+            loop: true, 
+            muted: true
+        });
+    </script>
+</body>
+</html>
