@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>owl.carousel</title>
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+
+</head>
+<body>
+    <div id="wrapper">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="../images/puppy-1.jpeg" >
+            </div>
+            <div class="item">
+                <img src="../images/puppy-2.jpeg" >
+            </div>
+            <div class="item">
+                <img src="../images/puppy-3.jpeg" >
+            </div>
+            <div class="item">
+                <img src="../images/kitten-1.jpeg" >
+            </div>
+            <div class="item">
+                <img src="../images/kitten-2.jpeg" >
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-2.2.4.min.js"></script>
+    <script src="../js/owl.carousel.js"></script>
+    <script src="../js/owl.autoplay.js"></script>
+    <script src="../js/owl.navigation.js"></script>
+    <script>
+        $(function(){
+            $('.owl-carousel').owlCarousel({
+                items:2,
+                margin:10,
+                loop:true,
+                nav : true,
+                navText:['<<','>>'],
+                autoplay:true,
+                autoplayTimeout:1500,
+                autoplayHoverPause:true
+            });
+        });
+    </script>
+</body>
+</html>
