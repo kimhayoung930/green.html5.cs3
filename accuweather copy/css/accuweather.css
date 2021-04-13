@@ -31,7 +31,8 @@ ul { list-style: none; }
 #main_header .gnb {
     margin: 0 auto;
     /* padding-top: 10px; */
-    display: flex;
+    overflow: hidden;
+    position: relative;
 }
 
 #main_header .logo {
@@ -51,10 +52,15 @@ ul { list-style: none; }
     padding: 22px 17px;
 }
 
+#main_header ul > li:nth-child(4),li:nth-child(5){
+    display: none;
+}
+
 #main_header .setting {
     text-align:right;
     padding-top: 12px;
-    flex: 1;
+    float: right;
+    padding-top: 12px;
 }
 #nav li:hover .snbmun{
     opacity: 1;
@@ -67,7 +73,9 @@ ul { list-style: none; }
     display: none;
     flex: 1;
 }
-
+#main_header .trigger .close{
+    display: none;
+}
 /* .active_path , .active bar */
 #main_header> .active_path{
     position: fixed;
@@ -100,10 +108,16 @@ ul { list-style: none; }
 #main_header> .lnb_container > .lnb{
     overflow: hidden;
     margin: 0 auto;
-
+    display: none;
 }
 #main_header > .lnb_container > .lnb > div{
     float: left;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
 }
 .appear{
     animation: fade-in 0.5s;
@@ -136,7 +150,20 @@ ul { list-style: none; }
 #main_content {
     height: 1000px;  /* 콘텐츠 스크롤 만들어 지도록*/ 
 }
-
+/*모바일 메뉴*/
+#mobile_menu{
+    display: none;
+    background: black;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;  /*vh vw  두가지를 사용해야지 스크롤이 안생김*/
+    position: fixed;
+    top: 61px;
+}
+#main_header a {
+    color: white;
+}
 /* 미디어 쿼리 */
 
 @media screen and (max-width: 767px) {
