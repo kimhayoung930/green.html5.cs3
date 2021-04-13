@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+</head>
+<body>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+        //var url=http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=767fd963cab4e1ad445013b1e9744439
+        var url = "http://api.openweathermap.org/data/2.5/weather"
+            url += "?q=" + "incheon";
+            url += "&units=" + "metric";
+            url += "&lang=" + "kr";
+            url += "&APPID=" + "767fd963cab4e1ad445013b1e9744439";
+
+            console.log("url:" + url);
+
+            $.ajax({
+                type:"GET",
+                url : url,
+                dataType : "json",
+                success:function(data){
+                    console.log("data:" + data);
+                    console.log(JSON.stringify(data));
+                    console.log("현재온도:" + data.main,temp);
+                    console.log("현재풍속:" + data.wind.speed);
+                },
+                error:function(request,status,error){
+                    console.log("code:" + request,status);
+                    console.log("message:"+ request,reqponseText);
+                    console.log("error:"+ error);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
