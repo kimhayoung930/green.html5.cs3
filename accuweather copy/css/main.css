@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/*메인콘텐츠*/
+#main_content{
+    background: #d8d8d8;
+}
+#main_content > div{
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#main_content > section{
+    float: left;
+}
+#main_content > #main_container > section > article > #map {
+    width: 600px;
+    height: 400px;
+}
+#main_content > #main_container > aside {
+    float:  right;
+}
