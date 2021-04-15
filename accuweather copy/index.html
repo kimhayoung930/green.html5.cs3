@@ -8,35 +8,34 @@
     <link rel="stylesheet" href="library/fontawesome-free-5.15.3-web/css/all.min.css">
     <link rel="stylesheet" href="../accuweather copy/css/common.css">
     <link rel="stylesheet" href="../accuweather copy/css/main.css">
-    <link rel="stylesheet" href="../accuweather copy/css/accuweather.css">
+    
+    
 </head>
 <body>
     <header id="main_header">
         <div class="gnb_container">
             <div class="gnb menu">
-            <div class="gnb">
                 <div class="logo">
-                    <a href="#"><img src="../accuweather copy/img/logo.svg" alt="로고"></a>
+                    <a href="#"><img src="img/logo.svg" alt="로고"></a>
                 </div>
                 <ul class="nav">
-                        <li><a href="#">레이더 및 지도</a></li>
-                        <li><a href="#">동영상</a></li>
-                        <li><a href="#">악천후 기상</a></li>  
-                        <li><a href="#">개인화된 예보</a></li>
-                        <li><a href="#">설정<a></li>  
-                </ul>  
+                    <li><a href="#">레이더 및 지도</a></li>
+                    <li><a href="#">동영상</a></li>
+                    <li><a href="#">악천후 기상</a></li>
+                    <li><a href="#">개인화된 예보</a></li>
+                    <li><a href="#">설정</a></li>
+                </ul>
                 <div class="setting">
                     <a href="#"><i class="fas fa-cog fa-lg"></i></a>
                 </div>
                 <div class="trigger">
-                    <a href="#" class="mobile hambuger"><i class="fas fa-bars fa-lg"></i></a>
-                    <a href="#" class="mobile close"><i class="fas fa-times"></i></a>
+                    <a href="#" class="mobile hamburger"><i class="fas fa-bars fa-lg"></i></a>
+                    <a href="#" class="mobile close"><i class="fas fa-times fa-lg"></i></a>
                 </div>
-            </div>
             </div>
         </div>
         <div class="active_path">
-            <div class="active_bor"></div>
+            <div class="active_bar"></div>
         </div>
         <div class="lnb_container">
             <div class="lnb">
@@ -49,7 +48,7 @@
                 <div>동영상</div>
                 <div>인기정보</div>
                 <div>전문가예보</div>
-                <div>스톱 체이서</div>
+                <div>스톰 체이서</div>
             </div>
             <div class="lnb">
                 <div>악천후 기상</div>
@@ -73,9 +72,43 @@
                 </article>
                 <article id="weather_loacation">
                     <h5>대한민국 기상 상태</h5>
+                    <div id="forecast">
+                        <a href="#">
+                            <span class="q">서울특별시</span>
+                            <span class="icon_weather"><img src="../accuweather copy/img/img/weather/svg/016-sun.svg" alt="맑음"></span>
+                            <span class="temp">-℃</span>
+                        </a>
+                        <a href="#">
+                            <span class="q">인천광역시</span>
+                            <span class="icon_weather"><img src="../accuweather copy/img/img/weather/svg/016-sun.svg" alt="맑음"></span>
+                            <span class="temp">-℃</span>
+                        </a>
+                        <a href="#">
+                            <span class="q">부산광역시</span>
+                            <span class="icon_weather"><img src="../accuweather copy/img/img/weather/svg/015-cloud.svg" alt="바람"></span>
+                            <span class="temp">-℃</span>
+                        </a>
+                        <a href="#">
+                            <span class="q">광주광역시</span>
+                            <span class="icon_weather"><img src="../accuweather copy/img/img/weather/svg/006-cloudy-1.svg" alt="비"></span>
+                            <span class="temp">-℃</span>
+                        </a>
+                        <a href="#">
+                            <span class="q">제주시</span>
+                            <span class="icon_weather"><img src="../accuweather copy/img/img/weather/svg/006-cloudy-1.svg" alt="흐림"></span>
+                            <span class="temp">-℃</span>
+                        </a>
+                        <a href="#">
+                            <span class="q">전주시</span>
+                            <span class="icon_weather"><img src="../accuweather copy/img/img/weather/svg/016-sun.svg" alt="맑음"></span>
+                            <span class="temp">-℃</span>
+                        </a>
+                    </div>
                 </article>
                 <article id="weather_add">
-                    <h5>추가 기상 예보 대한민국</h5>
+                    <div id="add">
+                        추가 기상 예보 대한민국개
+                    </div>
                 </article>
             </section>
             <aside id="main_aside">
@@ -94,10 +127,15 @@
     <footer id="main_footer">
         하단
     </footer>
+    <!--라이브러리-->
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5b5669a648a5b6432a73dbb42bd58267"></script>
    <script src="js/jquery-3.6.0.min.js"></script>
+   <!--아큐웨더-->
+   <script src="../accuweather copy/js/map.js"></script>
    <script src="js/responsive.js"></script>
    <script src="js/forcast.js"></script>
    <script src="js/main.js"></script>
+
     
 </body>
 </html>
