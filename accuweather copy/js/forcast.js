@@ -10,32 +10,54 @@ function Forecast() {
 
 Forecast.prototype.getCurrentWeather = function(city){
     var dataObj;
-    var openWeatherAPI = this.url; 
+    var openWeatherAPI = this.url; // q가 계속 붙으므로 url 초기화를 위해 반드시 넣어준다
 
     $.ajax({
-        type:"GET",
-        url:openWeatherAPI += city,
-        dataType:"json",
+        type: "GET",
+        url: openWeatherAPI += city,
+        dataType: "json",
         async: false,  // 동기형식으로 지정(data값을 return해주기 위해)
         success:function(data) {
-           temp = Math,floor(data.main.temp);
+            dataObj = data;
         },
         error:function(request,status,error) {
-            console.log("code:" + request.status+"/n"+"message:"+request.responseText+"/n"+"error:"+error);
+            console.log("code:" + request.status);
+            console.log("message:" + request.responseText);
+            console.log("error:" + error);
+        }
+    });
+
+    return dataObj;
+};
+
+/* 내일 날씨 얻어오기 */
+
+Forecast.prototype.getTomorrowWeather = function(){   
+    //..
+};
+
+/* 현재 날씨 온도 얻어오기 */
+
+Forecast.prototype.getCurrentTemp = function(city){
+    var temp;
+    var openWeatherAPI = this.url; // city가 계속 붙으므로 url 초기화를 위해 반드시 넣어준다
+
+    $.ajax({
+        type: "GET",
+        url: openWeatherAPI += city,
+        dataType: "json",
+        async: false,   //return해주기 위해
+        success:function(data) {
+            temp = Math.floor(data.main.temp); // 소수점 버림
         },
-        complete:function(data,textStatus){
-            
+        error:function(request,status,error) {
+            console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+        },
+        complete:function(data,textStatus) {
+            //작업 완료 후 처리
+
         }
     });
 
     return temp;
 };
-
-
-
-Forecast.prototype.getCurrentTemp = function(city){
-
-};
-
-
-
