@@ -1,0 +1,164 @@
+*{ margin: 0; 
+ padding: 0; 
+ border: 0; 
+ font-family: "Lucida Fax" ,Arial;
+ background-color:#dcc1fb;
+}
+/* 헤더 */
+#header{
+    background-color: #dcc1fb;
+    position: relative;
+    height: 70px;
+    width: 100%;
+} 
+.logo span img{
+    position:absolute;
+    height: 70px;
+    width: 200px;    
+}
+.nav{
+    position: absolute;
+    right: 0;
+    top: 30px;
+    right: 40px;
+    
+}
+
+.nav li{
+    display: inline;
+}
+.nav .menulink{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+        
+}
+.nav .menulink:hover{
+    color: #6c6262;
+    border-bottom: 2px solid white;
+}
+
+/* 콘텐츠 */
+#content{
+    position: absolute;
+    left: 0;
+    
+}
+
+/* 콘텐츠-베스트 */
+.best{
+    width: 960px;
+    margin-left: 250px;
+    height: 600px;
+
+}
+.best h1{
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+.best p{
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+.best-itme1 h1 img{
+    width: 200px;
+    height: 300px;
+    float: left;
+}
+.best-itme2 h1 img{
+    width: 200px;
+    height: 300px;
+    float: center;
+   
+    
+}
+.best-itme3 h1 img{
+    width: 200px;
+    height: 300px;
+    float: right;
+}
+
+/* 콘텐츠-코롱 */
+.cologen{
+    width: 960px;
+    margin-left: 250px;
+    height: 600px;
+}
+.cologen h1{
+    color: white;
+    float: right;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+.cologen p{
+    float: right;
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+.cologne-itme1 h1 img{
+    width: 200px;
+    height: 300px;
+    float: left;
+}
+.cologne-itme2 h1 img{
+    width: 200px;
+    height: 300px;
+    float: center;
+    margin-left: 20px;
+    
+}
+.cologne-itme3 h1 img{
+    width: 200px;
+    height: 300px;
+    float: center;
+    margin-left: 20px;
+    
+}
+
+/* 콘텐츠-now */
+
+.new{
+    width: 960px;
+    margin-left: 250px;
+    height: 600px;
+}
+.new h1{
+    
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+.new p{
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+.new-itme1 h1 img{
+    width: 200px;
+    height: 300px;
+    float: left;
+}
+.new-itme2 h1 img{
+    width: 200px;
+    height: 300px;
+    float: center;
+    margin-left: 20px;
+    
+}
+.new-itme3 h1 img{
+    width: 200px;
+    height: 300px;
+    float: center;
+    margin-left: 20px;
+    
+}
+/* 푸터 */
+#footer{
+    position: absolute;
+}
