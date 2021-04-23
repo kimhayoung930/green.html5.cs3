@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keydown,keyup,keypress</title>
+    <script src="./jquery-2.2.4.min.js"></script>
+    <script>
+        $(function(){
+            $(document).on("keydown",keyEventFun);
+            function keyEventFun(e){
+                var direct="";
+
+                switch(e.keyCoder){
+                    case 37:
+                        direct="LEFT";
+                        break;
+
+                    case 38:
+                        direct="TOP";
+                        break;
+                    
+                    case 39:
+                        direct="RIGHT";
+                        break;
+                    
+                    case 40:
+                        direct="BOTTOM";
+                        break;
+                }
+                if(direct)$("#user_id").val(direct);
+            }
+        });
+    </script>
+</head>
+<body>
+    <p><input type="text" name="user_id" id="user_id"></p>
+</body>
+</html>

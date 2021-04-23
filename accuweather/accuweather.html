@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accuweather</title>
+    <link rel="stylesheet" href="../accuweather/css/accuweather.css">
+    <link rel="stylesheet" href="../accuweather/library/fontawesome-free-5.15.3-web/css/all.min.css">
+</head>
+<body>
+    <header id="main_header">
+        <div class="gnb_content">
+            <div class="gnb">
+                <div class="logo">
+                    <a href="#"><img src="../accuweather/img/logo.svg" alt="로고"></a>
+                </div>
+                    <ul class="nav">
+                        <li><a href="#">레이더 및 지도</a></li>
+                        <li><a href="#">동영상</a></li>
+                        <li><a href="#">악천후기상</a></li>
+                    </ul>
+                    <div class="setting">
+                        <a href="#"><i class="fas fa-lg fa-cog"></i></a>
+                    </div>
+                </div>
+                <div class="trigger">
+                    <a href="#"><i class="fas fa-bars fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="main_content">
+
+    </div>
+    <script src="../accuweather/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5b5669a648a5b6432a73dbb42bd58267"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(33.450701, 126.570667),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+	</script>
+</body>
+</html>

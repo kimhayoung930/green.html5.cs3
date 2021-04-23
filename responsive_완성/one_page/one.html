@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/onepage-result.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>여행 목적지</h1>
+            <nav>
+                <a href="#eu" class="nav-btn">유럽</a>
+                <a href="#us" class="nav-btn">미국</a>
+                <a href="#ch" class="nav-btn">중국</a>
+                <a href="#jp" class="nav-btn">일본</a>
+            </nav>
+        </header>
+        <section id="eu" class="page1">
+            <h2>유럽</h2>
+        </section>
+        <section id="us" class="page2">
+            <h2>미국</h2>
+        </section>
+        <section id="ch" class="page3">
+            <h2>중국</h2>
+        </section>
+        <section id="jp" class="page4">
+            <h2>일본</h2>
+        </section>
+    </div>
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script>
+    $(function(){
+        $('nav a').click(function(e){
+            $.scrollTo(this.hash || 0, 1000);
+            console.log("test:" + this.hash);
+            e.preventDefault();
+        });
+    });
+</script>
+</body>
+</html>

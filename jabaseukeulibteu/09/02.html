@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$.ajax()메서드</title>
+    <script src="../09/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $.ajax({
+                url:"../09/MOCK_DATA(1).js",
+                dataType:"json",
+                success:function(date){
+                    if(date.length > 0){
+                        var tb = $("<table/>");
+                        for(var i in data){
+                            var $id=daa[i].id;
+                            var $first_name = data[i].first_name;
+                            var $first_name = data[i].last_name;
+                            var $email = data[i].gender;
+
+                            var row = $("<tr/>").append(
+                                $("<td/>").text($id),
+                                $("<td/>").text($first_name),
+                                $("<td/>").text($last_name),
+                                $("<td/>").text($email),
+                                $("<td/>").text($gender)
+                            );
+
+                            tb.append(row);
+                        }
+                        $(".wrap").append(tb);
+                    }
+                }
+
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <div class="wrap"></div>
+</body>
+</html>

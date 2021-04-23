@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map,grep</title>
+</head>
+<body>
+    <script>
+        $(function(){
+            var arr1=[{ 
+                "area":"서울",
+                "name":"무대리"
+            },{
+                "area":"부산",
+                "name":"홍과장"
+            },{
+                "area":"대전",
+                "name":"박사장"
+            },{
+                "area":"서울",
+                "name":"빅마마"
+            }]
+        var arr2 = $.map(arr1,function(a,b){
+            if(a.area=="서울"){
+                return a;
+            }
+        });
+        console.log(arr2);
+        console.log(arr1,function(a,b){
+            if(a.area=="서울"){
+                return true;
+            }else{
+                return false;
+            }
+        }) ;
+        console.log(arr3);
+        console.log("===Second End===");
+        });
+    </script>
+
+    <script>
+        $(function(){
+            var arr1=["서울","대전","부산","전주"];
+            var arr2=["한국","미국","일본","중국"];
+            var obj={
+                "name":"정부장"
+                "area":"서울"
+            }
+            var idxNum = $.inArray("부산","arr1");
+            console.log(idxNum);
+
+            var okArray1 = $.isArray(arr1);
+            var okArray2 = $.isArray(obj);
+            console.log(okArray1);
+            console.log(okArray2);
+
+            $.merge(arr2,arr1);
+            console.log(arr2);
+
+        });
+    </script>
+</body>
+</html>

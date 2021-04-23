@@ -49,6 +49,69 @@
 
         document.write("<h1>월드컵 날짜 정보</h1>");
         document.write("2020월드컵 몇 월:" + theMonth,"<br>"); 
+        document.write("2020월드컵 몇 일:" + theDate,"<br>");
+        document.write("2020월드컵 무슨 요일" + theDay,"<br>");
+    </script>
+
+    <hr>
+    <script>
+        var today = new Date();
+        var nowYear = today.getFullYear();
+
+        var theDate = new Date(nowYear, 11,31);
+        var diffDate = theDate.getTime()-today.getTime();
+
+        var result = Math.ceil(diffDate /(60*1000*60*24));
+        document.write("<h1>오늘부터 올해 연말까지 남은 날짜</h1>")
+        document.write("연말 D-day:" + result+"일 남았습니다.");
+    </script>
+    <hr>
+
+    <script>
+        var num=2.1234;
+
+        var maxNum=Math.max(10,5,8,30);
+        minNum=Math.min(10,5,8,30);
+        rondNum=Math.round(num);
+        floorNum=Math.floor(num);
+        ceilNum=Math.ceil(num);
+        rndNum=Math.random();
+        piNum=Math.PI;
+
+        document.write(maxNum,"<br>");
+        document.write(minNum,"<br>");
+        document.write(ronudNum,"<br>");
+        document.write(floorNum,"<br>");
+        document.write(ceilNum,"<br>");
+        document.write(rudNum,"<br>");
+        document.write(piNum,"<br>");
+    </script>
+    <hr>
+
+    <script>
+        document.write("<h1>컴퓨터 가위,바위,보 맞추기<h1>");
+
+            var game =prompt("가위,바위,보 중 선택하세요?","가위")
+            var gameNum;
+            switch(game){
+                case"가위" :
+                gameNum=1;break;
+                case"바위" :
+                gameNum=2;break;
+                case"보" :
+                gameNum=3;break;
+                
+                default:alert("잘못 작성했습니다.");
+                 location.reload();
+            }
+            
+            var com=Math.ceil(Math.round()*3)
+            document.write("가위입니다.");
+
+            if(gameNum == com){
+                document.write("바위입니다.");
+            } else{document.write("보입니다."); }
+        
     </script>
 </body>
 </html>

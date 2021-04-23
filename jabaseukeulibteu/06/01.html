@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../06/J-qq/jquery-3.6.0.min.js"></script>
+    <script>
+        // 형/동생요소 선택자
+        $(function(){
+            var style_1={
+                "color":"#0ff",
+                "border":"2px solid #f00"
+            }
+            var style_2 ={
+            "background-color":"yellow"
+            
+        }
+
+        $("#wrap").prev()
+        .css(style_1);
+        
+        $(".txt+p") .css(style_2);
+
+        $(".txt").next().next()
+        .css(style_2)
+
+         //전체형제요소
+    $(".txt1").siblings()
+        .ccs(style_1)
+    });
+
+   
+</script>
+</head>
+<body>
+    <div id="wrap">
+        <h1>인접 관계 선택자</h1>
+        <p>내용1</p>
+        <p class="txt">내용2</p>
+        <p>내용2</p>
+        <p>내용2</p>
+        
+    </div>
+
+    <div>
+        <div id="wrap1">
+            <h1>인접 관계 선택자</h1>
+            <p>내용1</p>
+            <p class="txt1">내용2</p>
+            <p>내용2</p>
+            <p>내용2</p>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가변 이미지</title>
+    <style>
+        .img1{
+            width:100%;
+        }   
+        /* width는 가변 */
+        .img2{
+            max-width: 100%;
+            height: auto;
+        }  
+        /* max-width는 일정크기 이상은 늘어나지 않게 하는거.; */
+
+    </style>
+</head>
+<body>
+        <img src="jump.png" class="img1">
+        <img src="jump.png" class="img2">
+</body>
+</html>

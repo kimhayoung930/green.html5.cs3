@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>off,unbind,undelegate</title>
+    <script src="../07/jquery-2.2.4.min.js"></script>
+    <script>
+        $(function(){
+            $(".btn_1").on("mouseover",function(){
+                alert("HELLO!")
+            });
+            $(document).on("mouseover","btn_2",function(){
+                alert("WELCOME!")
+            });
+            var btn_2 = $("<p><button class=\"btn_2\">버튼1</button></p>");
+            $("#wrap").append(btn_2);
+
+            $(".del_1").on("click",function(){
+                $(".btn_1").off("mouseover");
+            });
+            $(".del_2").on("click",function(){
+                $(document).off("mouseover",".btn_2");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <p><button class="btn_1">버튼1</button></p>
+    </div>
+    <p>
+        <button class="del_1">버튼1 이벤트 해제</button>
+        <button class="del_2">버튼2 이벤트 해제</button>
+    </p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before , after</title>
+    <script src="../06/J-qq/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $("#wrap p:eq(2)").after("<p>After</p>");
+            $("<p>insert After").insertAfter("#wrap p:eq(1)");
+
+            $("#wrap p:eq(1)").before("<p>Befor</p>");
+            $("<p>insert Befor").insertBefore("#wrap p:eq(0)");
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <p>내용1</p>
+        <p>내용2</p>
+         <p>내용3</p>
+    </div>
+</body>
+</html>

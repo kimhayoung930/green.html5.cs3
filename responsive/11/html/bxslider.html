@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bx Slider</title>
+    <link rel="stylesheet" href="../css/jquery.bxslider.css">
+    <style>
+        #wrapper{
+            width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="bxslider">
+            <div>
+                <img src="../images/things-1.jpeg" title="슬라이더 연습-1">
+            </div>
+            <div>
+                <img src="../images/things-2.jpeg" title="슬라이더 연습-2">
+            </div>
+            <div>
+                <img src="../images/things-3.jpeg" title="슬라이더 연습-3">
+            </div>
+            <div>
+                <img src="../images/things-4.jpeg" title="슬라이더 연습-4">
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-2.2.4.min.js"></script>
+    <script src="../js/jquery.bxslider.js"></script>
+    <script>
+        $(function(){
+            $('.bxslider').bxSlider({
+                sliderWidth:600,
+                captions:false,
+                auto:true,
+                autoControls:true,
+                stopAutoOnclick:true,
+                
+            })
+        });
+    </script>
+</body>
+</html>

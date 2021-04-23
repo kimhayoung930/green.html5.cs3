@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll</title>
+    <script src="../07/jquery-3.6.0.min.js"></script>
+    <script>
+        $(window).on("scroll",function(){
+            var sc_top = $(this).scrollTop();
+            var sc_left = $(this).scrollLeft();
+
+            $(".top").text(sc_top);
+            $(".left").text(sc_left);
+        });
+    </script>
+    <style>
+        body{
+            height: 10000px;
+            width: 500px;
+        }
+        #wrap{
+            position: fixed;
+            left : 10px;
+            top : 10px;
+        }
+    </style>
+    
+</head>
+<body>
+   <div id="wrap">
+       <p>scrollTop : <span class="top">0</span>px</p>
+       <p>scrollLeft : <span class="left">0</span>px</p>
+   </div>
+</body>
+</html>
