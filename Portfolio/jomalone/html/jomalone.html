@@ -111,9 +111,23 @@
     <div id="footer">
         <h1>footer1</h1>
 
-    </div>  
-</body>
+    </div> 
 <script src="../js/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+    var wd = $(window);
+    $('section[data-type="background"]').each(function(){
+        var bg = $(this);
+        wd.scroll(function(){
+            var yPos = -(wd.scrollTop() / bg.data('speed'));
+            var coords = '50%' + yPos + 'px';
+            console.log("coords:" + coords);
+            bg.css({backgroundPosition:coords});
+        });
+    });
+});
+</script>
+</body>
 
 
 </html>
