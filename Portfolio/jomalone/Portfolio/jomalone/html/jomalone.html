@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Jomalone</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="../css/jomalone.css">
+    
+</head>
+<body>
+    <div id="header">
+        <div id="maingnb">
+        <div class="logo">
+            <span><img src="../img/로고.png" alt=""></span>
+        </div>
+        <div class="nav"> 
+            <ul>
+                <li><a class="menulink" href="#">New</a></li>
+                <li><a class="menulink" href="#">Cologen</a></li>
+                <li><a class="menulink" href="#">Body & Hand</a></li>
+            </ul>
+        </div>
+        </div>
+        <div id="video-content">
+            <div class="video">
+                <video  src="../img/20A03_LavenderLand_6_sec_16x9_UNTITLED (1).mp4" autoplay loop width="100%"></video>
+            </div> 
+        </div>
+    </div>
+    <div class="container-1">
+        <div class="picture1">
+            <div class="photo1"><img src="../img/사진1.jpg" alt="사진1" width="100%"></div>
+            <div class="text"><p>LANEMDER LAND</p></div>
+            <div class="photo2"><img src="../img/사진2.jpg" alt="사진2" width="100%"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="bestitme">
+            <h1>MOST LOVED</h1>
+            <p>가장 사랑받는 제품</p>
+            <div class="bestbox">
+
+            <div class="bestitme1"></div>
+                <div class="box1">
+                    <div class="sidebox1"></div>
+                </div>
+            </div>
+
+            <div class="bestitme2">
+                <div class="box2">
+                    <div class="sidebox2"></div>
+                </div>
+            </div>
+
+            <div class="bestitme3">
+                <div class="box3">
+                    <div class="sidebox3"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="cologenitem">
+            <h1>COLOGNE</h1>
+            <p>정교하지만 심플한 절미의 향기</p>
+            <div class="cologneitmeimg">
+                <div class="colognebox1">
+                    <div class="cologne1"></div>
+                </div>
+            </div>
+            <div class="cologneitme2">
+                <div class="colognebox2">
+                    <div class="cologne2"></div>
+                </div>
+            </div>
+            <div class="cologneitme3">
+                <div class="colognebox3">
+                    <div class="cologne3"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="newitem">
+            <h1>WHTA'S NEW</h1>
+            <p>라벤더의 향긋 한 향기 나는 온라인 부티크 출시</p>
+            <div class="newitmeimg">
+            <div class="newitme1">
+                <div class="newbox1">
+                    <div class="new1"></div>
+                </div>
+            </div>
+            <div class="newitme2">
+                <div class="newbox2">
+                    <div class="new2"></div>
+                </div>
+            </div>
+            <div class="newitme3">
+                <div class="newbox3">
+                    <div class="new3"></div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+ 
+    
+    <div id="footer">
+        <h1>footer1</h1>
+
+    </div> 
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+    var wd = $(window);
+    $('section[data-type="background"]').each(function(){
+        var bg = $(this);
+        wd.scroll(function(){
+            var yPos = -(wd.scrollTop() / bg.data('speed'));
+            var coords = '50%' + yPos + 'px';
+            console.log("coords:" + coords);
+            bg.css({backgroundPosition:coords});
+        });
+    });
+});
+</script>
+</body>
+
+
+</html>

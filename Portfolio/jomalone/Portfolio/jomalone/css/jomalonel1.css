@@ -1,0 +1,293 @@
+*{ margin: 0; 
+    padding: 0; 
+    border: 0; 
+    font-family: "Lucida Fax" ,Arial;
+    background-attachment: fixed;
+    }
+    .section{
+        background: #dcc1fb;
+    }
+    /* .s3, .s4, .s5 {
+        height: auto !important;
+    } */
+    /* header */
+    #header{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top:0;
+        padding: 20px 0;
+        background:#dcc1fb;
+        border-bottom: 2px solid #6c6262;
+        z-index: 100;
+    }
+    #header .nav ul{
+        display: flex;
+        justify-content: center;
+    }
+    #header .nav ul li{
+        margin:  0 20px;
+        list-style: none;
+    }
+
+    #header .nav ul li a{
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        padding: 10px;
+        margin: 10px;
+            
+    }
+    #header .nav ul a:hover{
+        color: #6c6262;
+        border-bottom: 2px solid white;
+    } 
+
+    /* section1 */
+   #video{
+        background-size: cover;
+        top : 0px;
+        left: 0px;
+        min-width: 100%;
+        min-height: 100%;
+   }
+
+    /* section2 */
+    .photo1{
+        width: 100%;
+        height: 500px;
+        margin-top: 20px;
+    }
+    .photo2{
+        width: 100%;
+        height: 500px;
+        margin-top:300px;
+    }
+    
+    /* section3*/
+   
+    .bestitme h1{
+        color: white;
+        margin-bottom: 10px;
+        margin-left: 100px;   
+    }
+    .bestitme p{
+        color: white;
+        margin-bottom: 10px;
+        margin-left: 100px; 
+    }
+    .box1{
+        margin-left: 500px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        background-color: white;
+        width: 200px;
+        height: 300px;
+        border-radius: 20px;
+        padding: 6px;
+    }
+    .sidebox1{
+        background-color:none;
+        border: 4px solid #dcc1fb;
+        width: 180px;
+        height: 280px;
+        border-radius: 15px;
+        padding: 6px;
+        margin: 10px;
+        box-sizing: border-box;   
+    }
+    
+    .box2{
+        margin-left: 200px;
+        margin-bottom: 20px;
+        background-color: white;
+        width: 200px;
+        height: 300px;
+        border-radius: 20px;
+        padding: 6px;
+    }
+    .sidebox2{
+        background-color:none;
+        border: 4px solid #dcc1fb;
+        width: 180px;
+        height: 280px;
+        border-radius: 15px;
+        padding: 6px;
+        margin: 10px;
+        box-sizing: border-box;   
+    }
+    
+    .box3{
+        margin-left: 600px;
+        background-color: white;
+        width: 200px;
+        height: 300px;
+        border-radius: 20px;
+        padding: 6px;
+    }
+    .sidebox3{
+        background-color:none;
+        border: 4px solid #dcc1fb;
+        width: 180px;
+        height: 280px;
+        border-radius: 15px;
+        padding: 6px;
+        margin: 10px;
+        box-sizing: border-box;   
+    }
+
+    /* section4*/
+    .cologenitem h1{
+        color: white;
+        margin-left: 100px;
+        margin-bottom: 10px;     
+    }
+    .cologenitem p{
+        float: left;
+        color: white;
+        margin-left: 100px;
+        margin-bottom: 10px;  
+    }
+    
+    .colognebox1{
+        margin-left: 500px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        background-color: white;
+        width: 200px;
+        height: 300px;
+        border-radius: 20px;
+        padding: 6px;
+    }
+    .cologne1{
+        background-color:none;
+        border: 4px solid #dcc1fb;
+        width: 180px;
+        height: 280px;
+        border-radius: 15px;
+        padding: 6px;
+        margin: 10px;
+        box-sizing: border-box;   
+    }
+    
+    .colognebox2{
+        margin-left: 200px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        background-color: white;
+        width: 200px;
+        height: 300px;
+        border-radius: 20px;
+        padding: 6px;
+    }
+    .cologne2{
+        background-color:none;
+        border: 4px solid #dcc1fb;
+        width: 180px;
+        height: 280px;
+        border-radius: 15px;
+        padding: 6px;
+        margin: 10px;
+        box-sizing: border-box;   
+    }
+    
+    .colognebox3{
+        margin-left: 400px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        background-color: white;
+        width: 200px;
+        height: 300px;
+        border-radius: 20px;
+        padding: 6px;
+    }
+    .cologne3{
+        background-color:none;
+        border: 4px solid #dcc1fb;
+        width: 180px;
+        height: 280px;
+        border-radius: 15px;
+        padding: 6px;
+        margin: 10px;
+        box-sizing: border-box;   
+    }
+
+/*section5*/
+.newitem h1{
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 100px;
+}
+.newitem p{
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 100px;
+}
+
+.newbox1{
+    margin-left: 500px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    padding: 6px;
+}
+.new1{
+    background-color:none;
+    border: 4px solid #dcc1fb;
+    width: 180px;
+    height: 280px;
+    border-radius: 15px;
+    padding: 6px;
+    margin: 10px;
+    box-sizing: border-box;   
+}
+
+.newbox2{
+    margin-left: 200px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    padding: 6px;
+}
+.new2{
+    background-color:none;
+    border: 4px solid #dcc1fb;
+    width: 180px;
+    height: 280px;
+    border-radius: 15px;
+    padding: 6px;
+    margin: 10px;
+    box-sizing: border-box;   
+}
+
+.newbox3{
+    margin-left: 400px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    padding: 6px;
+}
+.new3{
+    background-color:none;
+    border: 4px solid #dcc1fb;
+    width: 180px;
+    height: 280px;
+    border-radius: 15px;
+    padding: 6px;
+    margin: 10px;
+    box-sizing: border-box;   
+}
+
+/* section6 */
+
+/* footer */
